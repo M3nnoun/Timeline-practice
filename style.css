@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+}
+
+section.col {
+    padding: 0 3rem;
+    border-left: 4px solid red;
+}
+
+ul {
+    background-color: rgb(238, 156, 55);
+    list-style: none;
+    position: relative;
+    width: 50vw;
+    padding: 0 2rem;
+    
+}
+
+.col ul li::before {
+    content: "";
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-color: cadetblue;
+    border-radius: 50%;
+    top:0;
+    right: calc(100% + 4.5rem);
+  
+
+ }
+
+ ul li {
+    padding: 1rem 0;
+    position: relative;
+ }
